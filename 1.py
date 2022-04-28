@@ -10,7 +10,7 @@ memory_gb = 4
 
 conf = (
     SparkConf()
-        .setAppName("huinia")
+        .setAppName("spark")
         .setMaster('local[{}]'.format(number_cores))
         .set('spark.driver.memory', '{}g'.format(memory_gb))
 )
